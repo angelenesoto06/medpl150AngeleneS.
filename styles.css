@@ -1,0 +1,96 @@
+:root {
+  --green1: #d8f8d8;
+  --green2: #b5e8b5;
+  --green3: #7fcf7f;
+  --text: #2e3d2e;
+  --white:  #ffffff;
+}
+
+body {
+  background: var(--green1);
+  font-family: 'poppins', sans-serif;
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.banner {
+    width: 100%;
+    padding: 40px 0;
+    background: var(--green2);
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0,15);
+    text-align: center;
+  }
+
+.baner h1 {
+  font-size:3rem;
+  font-weight: 700;
+  color: var(--text);
+  text-shadow: 2px 2px 0 var(--white);
+}
+
+section, .card {
+  background: var(--white);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0,1);
+  border: 3px solid var(--green2);
+  position: relative;
+}
+
+section:after, .card::after {
+  content: "";
+  position: absoultue;
+  width: 55px;
+  height: 55px;
+  top: -20px;
+}
+
+button, .btn {
+  background: var(--green3);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 15px;
+  color: var(--white);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2 ease:
+  box-shadow: 2px 3px 0 #5ca85c;
+}
+
+button:hover, .btn:hover {
+  transform: translateY(-2px);
+}
+
+a {
+  color: var(--green3);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #5aa55a;
+}
+
+.bubble {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: var(--green2);
+  border-radius: 50%;
+  border: 3px solid var(--green3);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.bubble.small {
+  width: 25px;
+  height: 25px;
+}
+
+.bubble.big {
+  width: 55px;
+  height: 55px;
+}
